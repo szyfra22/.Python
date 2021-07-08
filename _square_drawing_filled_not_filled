@@ -1,0 +1,33 @@
+'''
+random n
+n > 4
+
+n in y axis
+n in x axis
+
+filled square version
+empty square version (just borders)
+'''
+
+
+import random
+import string
+
+string.ascii_letters = 'abcdefghijklmnopqrstwuxyz'
+n = random.randint(5, 25)
+a = random.choice(string.ascii_letters)
+
+print(n)
+print(a, "\n")
+# list
+
+# for not filled square
+for x in range(1, n + 1):
+    print(a,  a * (n - 2) if x in (1, n) else " " * (n - 2), a, sep='')
+
+print("\n")
+print("\n")
+
+# for filled square
+for x in range(n):
+    print(a*n)
