@@ -2,7 +2,6 @@ def miller_rabin(n, k):
 
     # Implementation uses the Miller-Rabin Primality Test
     # The optimal number of rounds for this test is 40
-    # See http://stackoverflow.com/questions/6325576/how-many-iterations-of-rabin-miller-should-i-use-for-cryptographic-safe-primes
     # for justification
 
     # If number is even, it's a composite number
