@@ -1,0 +1,35 @@
+# Hello World"
+#interpreter ścieżka\python.exe
+# Python 3.7.9 (tags/v3.7.9:13c94747c7, Aug 17 2020, 18:58:18) [MSC v.1900 64 bit (AMD64)] on win32
+# Type "help", "copyright", "credits" or "license" for more information.
+# >>> print("Hello World")
+# Hello World
+# >>>
+
+#shebang
+#!/usr/bin/python3
+# print("Hello World")
+
+# Wprowadzanie danych
+# imie, nazwisko, rok = input("Podaj imię, naziwsko i rok urodzenia: ").split()
+# print("Imię: ", imie)
+# print("Nazwisko: ", nazwisko)
+# print("Rok urodzenia: ", rok)
+
+# Zapis danych
+# KodTab = [] * 4
+# for i in range(4):
+#     print("Ustaw kod zamka, cyfra ", i + 1, ": ")
+#     kod = int(input())
+#     KodTab.append(kod)
+# print(KodTab)
+# SprTab = [] * 4
+# for i in range(4):
+#     print("Wpisz cyfrę", i + 1, ": ")
+#     spr = int(input())
+#     SprTab.append(spr)
+#
+# if SprTab[0] == KodTab[0] and SprTab[1] == KodTab[1] and SprTab[2] == KodTab[2] and SprTab[3] == KodTab[3]:
+#     print("Kod się zgadza, możesz otworzyć zamek")
+# else:
+#     print("Kod się nie zgadza")
