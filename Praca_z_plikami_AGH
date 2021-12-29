@@ -23,17 +23,11 @@
 
 # import os
 #
-#
-# def list_files(startpath):
-#     for root, dirs, files in os.walk(startpath):
-#         level = root.replace(startpath, '').count(os.sep)
-#         indent = ' ' * 4 * (level)
-#         print('{}{}/'.format(indent, os.path.basename(root)))
-#         subindent = ' ' * 4 * (level + 1)
-#         for f in files:
-#             print('{}{}'.format(subindent, f))
-#
-#
-# print(list_files("D://pythonProject//Praca_z_plikami"))
+# for dirpath, dirnames, filenames in os.walk(r"D:\pythonProject\Praca_z_plikami"):
+#     print(
+#         f"Root: {dirpath} \n"
+#         f"Sub-directories: {dirnames} \n"
+#         f"Files: {filenames} \n\n"
+#     )
 
 #Konwersja rozszerzenia
