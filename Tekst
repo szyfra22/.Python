@@ -1,0 +1,27 @@
+# #Usuwanie słów # link nie działa do repozytorium tesktowego
+# Napisz skrypt usuwający z wejściowego ciągu tekstowego
+# (wybierz kilka plików z repozytorium: Tekstowego) następujące
+# słowa : się, i, oraz, nigdy, dlaczego
+
+with open("2.txt", 'r', encoding="utf8") as file:
+    content = file.read()
+    content = content.replace("się", "")
+    content = content.replace("i", "")
+    content = content.replace("oraz", "")
+    content = content.replace("nigdy", "")
+    content = content.replace("dlaczego", "")
+    print(content)
+
+# Podmienianie słów
+# Napisz skrypt zmieniający w podanym ciągu wejściowym
+# (wybierz kilka plików z repozytorium: Tekstowego) następujące
+# słowa : i, oraz, nigdy, dlaczego na następujący zestaw słów : oraz,
+# i, prawie nigdy, czemu. Zalecaną strukturą jest słownik.
+
+with open("2.txt", 'r', encoding="utf8") as file:
+    content = file.read()
+    content = content.replace("i", "oraz")
+    content = content.replace("oraz", "i")
+    content = content.replace("nigdy", "prawie nigdy")
+    content = content.replace("dlaczego", "czemu")
+    print(content)
