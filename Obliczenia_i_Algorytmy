@@ -1,0 +1,99 @@
+# Równanie kwadratowe
+# Napisz skrypt obliczający pierwiastki równania kwadratowego
+# w postaci : y = ax2+bx+c. Wejściem skryptu są wartości: a, b, c
+# import random
+# import math
+#Sprawdzenie
+# a = 2
+# b = 7
+# c = 6
+# a = random.randint(1, 11)
+# b = random.randint(1, 11)
+# c = random.randint(1, 11)
+#
+#
+# delta = b * b - (4 * a * c)
+# if delta > 0:
+#     x1 = (-b - math.sqrt(delta))/ (2 * a)
+#     x2 = (-b + math.sqrt(delta))/ (2 * a)
+#     print(f"x1 = {x1} \nx2 = {x2}")
+# elif delta == 0:
+#     x3 = (-b) / (2 * a)
+#     print(x3)
+# else:
+#     print("Delta < 0")
+
+#Sortowanie
+# Napisz skrypt sortujący liczby malejąco. Wygeneruj losowo 50
+# liczb - wykorzystąj standardową funkcje do losowania.
+# Z wbudowanej funkcji sortującej korzystaj tylko w celu weryfikacji
+# wyników
+# import random
+# import numpy
+#
+# alist = numpy.random.randint(0, 101, 50)
+# print(alist)
+#
+# for i in range(len(alist)-1):
+#     for j in range(len(alist)-1-i):
+#         if alist[j] > alist[j+1]:
+#             alist[j],alist[j+1] = alist[j+1],alist[j]
+#
+# print(alist)
+
+#Iloczyn skalarnya
+# Napisz skrypt obliczający wartość iloczynu dwóch wektorów:
+# a = [1, 2, 12, 4], b = [2, 4, 2, 8], tzw. iloczyn skalarny wektorów
+# a = [1, 2, 12, 4]
+# b = [2, 4, 2, 8]
+# tabab = [] * 4
+# length = len(a)
+# for i in range(length):
+#     v = a[i] * b[i]
+#     tabab.append(v)
+# print(tabab)
+
+#Suma macierzy
+# Napisz skrypt sumujący dwie macierze o rozmiarach 128x128.
+# Wykorzystaj generator liczb losowych do wygenerowania
+# macierzy.
+# import numpy
+#
+# print(alisimport random
+# #
+# # alist = numpy.random.randint(1, 101, 16384)
+# # blist = numpy.random.randint(1, 101, 16384)
+# print(blist)
+# length = len(alist)
+# clist = [] * 16384
+# for i in range(length):
+#     sum = alist[i] + blist[i]
+#     clist.append(sum)
+# print(clist)
+
+#Mnożenie macierzy
+# Napisz skrypt realizujący mnożenie dwóch macierzy o rozmiarach 8x8
+# import random
+# import numpy
+#
+# atab = numpy.random.randint(1, 101, 16)
+# btab = numpy.random.randint(1, 101, 16)
+# print(atab)
+# print(btab)
+# length = len(atab)
+# ctab = [] * 16
+# for i in range(length):
+#     c = atab[i] * btab[i]
+#     ctab.append(c)
+#
+# print(ctab)
+
+# Wyznacznik macierzy
+# Napisz skrypt wyliczający wyznacznik macierzy wygenerowanej losowo
+# import numpy
+# import random
+# A = numpy.random.randint(1, 11, (3, 3))
+# length = len(A)
+# print(A)
+# det_A = numpy.linalg.det(A)
+# print(det_A)
