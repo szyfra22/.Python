@@ -2,7 +2,6 @@
 # Sparsuj przygotowanego XML (parserem SAX i DOM) i go
 # zmodyfikuj np. zmień wartość któregoś tag’a i zapisz do nowego
 # pliku
-
 # import xml.etree.ElementTree as ET
 #
 # mytree = ET.parse('1.xml')
@@ -13,3 +12,27 @@
 #     x.text = str(a)
 #     x.set('updated', 'yes')
 # mytree.write('new.xml')
+
+# CSV/JSON
+# Napisz program proszący użytkownika o dane zawierające kilka
+# pól (może to być np. lista zadań z opisem i terminami wykonania czy
+# baza recenzji filmów) i zapisujący podane dane do pliku
+# w wybranym formacie (CSV/JSON). Przy każdym uruchomieniu program
+# powinien odczytywać i wyświetlać wprowadzone
+# wcześniej dane, umożliwiać ich usunięcie (po jednym wpisie)
+# oraz dodanie nowych rekordów
+import csv
+
+with open('3.csv', 'w') as file:
+    w = csv.writer(file, quoting=csv.QUOTE_ALL)
+    repeat = False
+    while repeat == False:
+        why = input("Why? ")
+        date = input("Date: ")
+        story = input("Story: ")
+        w.writerow([why, date, story])
+        repeatQuestion = input("Try again? (y or n)")
+        if repeatQuestion == 'n' or repeatQuestion == 'N':
+            repeat = True
+        else:
+            repeat = False
