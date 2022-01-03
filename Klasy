@@ -1,0 +1,64 @@
+# Liczby zespolone
+# Zdefiniuj klasę reprezentującą liczby zespolone
+# # (wraz z funkcjami na nich działającymi np. dodawanie, odejmowanie itd.)
+# class Complex ():
+#
+#     def initComplex(self):
+#         self.realPart = int(input("Enter the Real Part: "))
+#         self.imgPart = int(input("Enter the Imaginary Part: "))
+#
+#     def display(self):
+#         print(self.realPart,"+",self.imgPart,"i", sep="")
+#
+#     def sum(self, c1, c2):
+#         self.realPart = c1.realPart + c2.realPart
+#         self.imgPart = c1.imgPart + c2.imgPart
+#
+#
+# c1 = Complex()
+# c2 = Complex()
+# c3 = Complex()
+# print("Enter first complex number")
+# c1.initComplex()
+# print("First Complex Number: ", end="")
+# c1.display()
+# print("Enter second complex number")
+# c2.initComplex()
+# print("Second Complex Number: ", end="")
+# c2.display()
+# print("Sum of two complex numbers is ", end="")
+# c3.sum(c1,c2)
+# c3.display()
+
+# Kalkulator
+# Wykorzystaj powyzszą klasę do stworzenia prostego kalkulatora, parsującego i wykonującego równanie podane przez
+# użytkownika
+
+# class Calculator:
+# 
+#     def __init__(self):
+#         self.inputFT = int(input("Enter a first number: "))
+#         self.inputSC = int(input("Enter a second number: "))
+#         self.action = input("PLease choose an action(-, +, *, /: ")
+# 
+#     def actionCalc(self):
+#         if self.action == '-':
+#             self.minus = self.inputFT - self.inputSC
+#             print(f"{self.inputFT} {self.action} {self.inputSC} = {self.minus}")
+#             return self.minus
+#         elif self.action == '+':
+#             self.plus = self.inputFT + self.inputSC
+#             print(f"{self.inputFT} {self.action} {self.inputSC} = {self.plus}")
+#             return self.plus
+#         elif self.action == '*':
+#             self.multi = self.inputFT * self.inputSC
+#             print(f"{self.inputFT} {self.action} {self.inputSC} = {self.multi}")
+#             return self.multi
+#         elif self.action == '/':
+#             self.div = self.inputFT / self.inputSC
+#             print(f"{self.inputFT} {self.action} {self.inputSC} = {self.div}")
+#             return self.div
+# 
+# 
+# n1 = Calculator()
+# n1.actionCalc()
